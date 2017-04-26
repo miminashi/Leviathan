@@ -40,6 +40,12 @@ class PostNoteViewController: FormViewController {
                 break
             }
         }.addDisposableTo(disposeBag)
+        
+        //self.form = FormDescriptor()
+        
+        self.form
+            +++ FormSectionDescriptor(headerTitle: "Note", footerTitle: nil)
+                <<< FormRowDescriptor(tag: "Note", type: .multilineText, title: "")
     }
     
     
