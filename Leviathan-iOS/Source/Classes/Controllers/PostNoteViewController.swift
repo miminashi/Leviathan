@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Eureka
+import SwiftForms
+import RxSwiftForms
 import RxCocoa
 import RxSwift
 import Toucan
@@ -16,8 +17,6 @@ class PostNoteViewController: FormViewController {
 
     // MARK: - Private Properties
     
-    // FormViewController's property tableView doesn't appear in IB :-(
-    @IBOutlet private var tv: UITableView!
     @IBOutlet private var accountIndicatorButton: UIButton!
     private let settings = Globals.injectionContainer.resolve(Settings.self)
     private let disposeBag = DisposeBag()
@@ -27,8 +26,6 @@ class PostNoteViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView = self.tv
         
         guard let settings = settings else {
             preconditionFailure()
@@ -43,8 +40,6 @@ class PostNoteViewController: FormViewController {
                 break
             }
         }.addDisposableTo(disposeBag)
-        
-        self.navigationOptions = .Disabled
     }
     
     

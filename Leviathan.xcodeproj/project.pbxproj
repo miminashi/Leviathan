@@ -254,12 +254,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				E944A9B31EB1214D006AB6A2 /* RxSwiftForms.framework in Frameworks */,
 				E944A9B41EB1214D006AB6A2 /* SwiftForms.framework in Frameworks */,
-=======
-				B3A60A991EB06CEB00DD5B6D /* Eureka.framework in Frameworks */,
->>>>>>> master
 				E91355251EA289D50046DAF0 /* Alamofire.framework in Frameworks */,
 				E91355261EA289D50046DAF0 /* Gloss.framework in Frameworks */,
 				E91355271EA289D50046DAF0 /* Locksmith.framework in Frameworks */,
